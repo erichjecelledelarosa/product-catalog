@@ -1,0 +1,86 @@
+.card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #d8b4fe;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 8px 0 4px;
+  color: #4c1d95;
+}
+
+.category {
+  margin: 0 0 8px;
+  color: #6b21a8;
+  font-size: 0.9rem;
+}
+
+.price {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6b21a8;
+}
+
+.product-image {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 90px;
+  height: 90px;
+  background: #f3e8ff;
+  border-radius: 8px;
+}
+
+.badge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: #7e22ce;
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.stock {
+  margin: 0 0 12px;
+  font-weight: bold;
+}
+
+.in-stock {
+  color: green;
+}
+
+.no-stock {
+  color: red;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background: #7e22ce;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover:not(:disabled) {
+  background: #581c87;
+}
+
+/* Out of stock: faded and gray */
+.out-of-stock {
+  background: #e5e7eb;
+  border-color: #9ca3af;
+  opacity: 0.6;
+}
+
+.out-of-stock button {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
