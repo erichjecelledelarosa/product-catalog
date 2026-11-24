@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f0fc;
+  color: #2d2540;
+}
+
+/* Page layout: footer stays at the bottom */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: #6b46c1;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.header-inner {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.cart-badge {
+  background: #ffffff;
+  color: #6b46c1;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+/* Welcome section */
+.welcome {
+  background: #e9d8fd;
+  text-align: center;
+  padding: 36px 20px;
+}
+
+.welcome h2 {
+  margin: 0 0 12px;
+  color: #553c9a;
+}
+
+.welcome p {
+  margin: 4px 0;
+  color: #4a4066;
+}
+
+/* Main content */
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.cart-message {
+  background: #ffffff;
+  border-left: 5px solid #9f7aea;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 14px 20px;
+  margin: 0 0 24px;
+}
+
+/* Responsive grid: 4 columns (desktop), 2 (tablet), 1 (mobile) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Footer */
+.footer {
+  background: #3b2f5c;
+  color: #e9d8fd;
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 1.1rem;
+  }
+}
